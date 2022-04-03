@@ -119,6 +119,12 @@ d = lambda x: 48*(1+x)**60+60*((1+x)**59)*(48*x-1)
 x1 = 0.1
 n = 6
 
+# Stewart 3 Review 49
+f = lambda x: x**5-x**4+3*(x**2)-3*x-2
+d = lambda x: 5*(x**4)-4*(x**3)+6*x-3
+x1 = 1
+n = 6
+
 
 iter_num, sol = newton(f, d, x1, n)
 print("i:", iter_num, " val:", sol)
